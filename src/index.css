@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ .monthly-income {
+  width: 75%;
+}
+
+ .annual-numbers {
+    text-align:right;
+    width: 25%;
+ }
+
+ .align-right {
+   text-align:right;
+   width: 25%;
+ }
