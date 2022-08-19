@@ -1,3 +1,5 @@
+import { Table } from "react-bootstrap";
+
 const TwoRowTable = ({salaryChosen, tax}) => {
     return (
       <div>
