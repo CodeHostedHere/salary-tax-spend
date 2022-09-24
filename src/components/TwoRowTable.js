@@ -1,4 +1,4 @@
-import { Table } from "react-bootstrap";
+import Table from 'react-bootstrap/Table';
 
 const TwoRowTable = ({salaryChosen, tax}) => {
     return (
@@ -6,17 +6,26 @@ const TwoRowTable = ({salaryChosen, tax}) => {
         <Table bordered striped size="sm" variant="dark">
           <tbody>
             <tr>
-              <td className="align-middle">
+              <td className="align-middle" rowSpan={2}>
                 Salary
               </td>
-              <td className="align-right">
-                € { salaryChosen.compensationConverted.toLocaleString("en-US") }
+              <td className="annual-numbers"> 
+                { salaryChosen.currency } { salaryChosen.compensation.toLocaleString("en-US") }
               </td>
-              <td className="align-middle">
+              <td className="align-middle" rowSpan={2}>
                 Tax
               </td>
-              <td className="align-right">
-                € { tax.data.taxPayableConverted && tax.data.taxPayable.toLocaleString("en-US") }
+              <td className="annual-numbers">
+              { salaryChosen.currency } { tax.data.taxPayable && tax.data.taxPayable.toLocaleString("en-US") } 
+              </td>
+            </tr>
+            <tr>
+              <td className="annual-numbers">
+                € { salaryChosen.compensationConverted.toLocaleString("en-US") }
+              </td>
+              <td className="annual-numbers">
+            
+              € { tax.data.taxPayableConverted && tax.data.taxPayableConverted.toLocaleString("en-US") }
               </td>
             </tr>
           </tbody>
