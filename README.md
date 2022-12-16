@@ -5,6 +5,8 @@
  
  This is a short project to get acquainted with React and provide a frontend for the spring-boot project. This project displays the average salary for developers in each country, its tax and the cost of living to get an idea of quality of life as a dev in each company.
 
+ Some unit tests are present but they are not fully complete as it is a toy project.
+
 ![Opening Table](https://i.imgur.com/N4ZoiVy.png)
 
 The opening screen

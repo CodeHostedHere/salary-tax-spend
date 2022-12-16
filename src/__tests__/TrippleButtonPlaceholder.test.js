@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import renderer from 'react-test-renderer';
 
 import OneRowTable from '../components/OneRowTable';
@@ -29,11 +29,4 @@ describe('Triplebutton Placeholder', () =>{
       expect(td[3].children[1]).toBe("6000");
     });
   
-  });
-
-
-describe('something truthy', () => {
-    test('true to be true', () => {
-      expect(true).toBe(true);
-    });
   });

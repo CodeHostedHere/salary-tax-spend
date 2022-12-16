@@ -10,13 +10,13 @@ const OneRowTable = ({salaryChosen, tax}) => {
                 Salary
               </td>
               <td className="align-right">
-                € { salaryChosen.compensationConverted && salaryChosen.compensationConverted.toLocaleString("en-US") }
+                € { salaryChosen && salaryChosen.compensationConverted.toLocaleString("en-US") }
               </td>
               <td className="align-middle">
                 Tax
               </td>
               <td className="align-right">
-                € { tax.data.taxPayableConverted && tax.data.taxPayableConverted.toLocaleString("en-US") }
+                € { tax && tax.data.taxPayableConverted.toLocaleString("en-US") }
               </td>
             </tr>
           </tbody>
